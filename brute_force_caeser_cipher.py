@@ -7,8 +7,7 @@ try:
 
 except FileNotFoundError:
     print("File not found.")
-input_file.close()
-
+    
 if text:
   for i in range(256):
     shifted_text = ""
