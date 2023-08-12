@@ -6,14 +6,13 @@ try:
 
 except FileNotFoundError:
     print("File not found.")
-input_file.close()
 
 if text:
-  for i in range(len(text)):
     shifted_text = ""
-    shifted_char_value = (ord(char) + i)
-    while shifted_char_value > 255:
-        shifted_char_value -= 255
-    shifted_char = chr(shifted_char_value)  # Use chr() to convert ASCII value to character
-    shifted_text += shifted_char
+    for i in range(len(text)):
+        shifted_char_value = (ord(char) + i)
+        while shifted_char_value > 255:
+            shifted_char_value -= 255
+        shifted_char = chr(shifted_char_value)  # Use chr() to convert ASCII value to character
+        shifted_text += shifted_char
   print(shifted_text)
