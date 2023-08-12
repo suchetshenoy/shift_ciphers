@@ -9,7 +9,7 @@ except FileNotFoundError:
 input_file.close()
 
 if text:
-  for i in range(len(text):
+  for i in range(len(text)):
     shifted_text = ""
     shifted_char_value = (ord(char) + i)
     while shifted_char_value > 255:
