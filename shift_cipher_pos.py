@@ -10,7 +10,7 @@ except FileNotFoundError:
 if text:
     shifted_text = ""
     for i in range(len(text)):
-        shifted_char_value = (ord(char) + i)
+        shifted_char_value = (ord(text[i]) + i)
         while shifted_char_value > 255:
             shifted_char_value -= 255
         shifted_char = chr(shifted_char_value)  # Use chr() to convert ASCII value to character
