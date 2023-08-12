@@ -12,7 +12,7 @@ if text:
   shift = ord(text[0])
   shifted_text = ""
   for i in range(1,len(text)):
-    shifted_char_value = (ord(text[I]) + shift)
+    shifted_char_value = (ord(text[i]) + shift)
     while shifted_char_value > 255:
         shifted_char_value -= 255
     shift = shifted_char_value
